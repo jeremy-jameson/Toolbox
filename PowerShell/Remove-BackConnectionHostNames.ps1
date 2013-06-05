@@ -32,9 +32,10 @@ begin
 
         $registryValue = $registryKey.GetValue("BackConnectionHostNames")
 
-        $registryValue -Split [System.Environment]::NewLine | foreach {
-            $hostNameList.Add($_) | Out-Null
-        }
+        $registryValue |
+            ForEach-Object {
+                $hostNameList.Add($_) | Out-Null
+            }
 
         # HACK: Return an array (containing the ArrayList) to avoid issue with
         # PowerShell returning a string (when registry value only contains one
@@ -57,9 +58,6 @@ begin
             }
         }
 
-        [string] $delimitedHostNames =
-            $hostNameList -Join [System.Environment]::NewLine
-
         [string] $registryPath =
             "HKLM:\System\CurrentControlSet\Control\Lsa\MSV1_0"
 
@@ -75,12 +73,12 @@ begin
         ElseIf ($registryValue -eq $null)
         {
             New-ItemProperty -Path $registryPath -Name BackConnectionHostNames `
-                -PropertyType MultiString -Value $delimitedHostNames | Out-Null
+                -PropertyType MultiString -Value $hostNameList | Out-Null
         }
         Else
         {
             Set-ItemProperty -Path $registryPath -Name BackConnectionHostNames `
-                -Value $delimitedHostNames | Out-Null
+                -Value $hostNameList | Out-Null
         }
     }
 
