@@ -1,3 +1,34 @@
+<#PSScriptInfo
+
+.VERSION 1.0.0
+
+.GUID 1470daa8-b145-4e5c-a8b4-c6e41fbdc25f
+
+.AUTHOR jeremy-jameson
+
+.COMPANYNAME 
+
+.COPYRIGHT 
+
+.TAGS IIS 
+
+.LICENSEURI 
+
+.PROJECTURI https://github.com/jeremy-jameson/Toolbox
+
+.ICONURI 
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS 
+
+.EXTERNALSCRIPTDEPENDENCIES 
+
+.RELEASENOTES
+
+
+#>
+
 <#
 .SYNOPSIS
 Adds one or more host names to the BackConnectionHostNames registry value.

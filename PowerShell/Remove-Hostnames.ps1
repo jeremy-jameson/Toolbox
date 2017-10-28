@@ -1,3 +1,34 @@
+<#PSScriptInfo
+
+.VERSION 1.0.0
+
+.GUID e47a7d5c-7067-4b2e-b8e0-90ce7d3b0ab9
+
+.AUTHOR jeremy-jameson
+
+.COMPANYNAME 
+
+.COPYRIGHT 
+
+.TAGS DNS
+
+.LICENSEURI 
+
+.PROJECTURI https://github.com/jeremy-jameson/Toolbox
+
+.ICONURI 
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS 
+
+.EXTERNALSCRIPTDEPENDENCIES 
+
+.RELEASENOTES
+
+
+#>
+
 <#
 .SYNOPSIS
 Removes one or more hostnames from the hosts file.
