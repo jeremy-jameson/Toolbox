@@ -1,3 +1,34 @@
+<#PSScriptInfo
+
+.VERSION 1.0.0
+
+.GUID 107299c9-d804-434b-a925-7596dbe2afa7
+
+.AUTHOR jeremy-jameson
+
+.COMPANYNAME 
+
+.COPYRIGHT 
+
+.TAGS DNS
+
+.LICENSEURI 
+
+.PROJECTURI https://github.com/jeremy-jameson/Toolbox
+
+.ICONURI 
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS 
+
+.EXTERNALSCRIPTDEPENDENCIES 
+
+.RELEASENOTES
+
+
+#>
+
 <#
 .SYNOPSIS
 Gets the hostnames (and corresponding IP addresses) specified in the hosts file.

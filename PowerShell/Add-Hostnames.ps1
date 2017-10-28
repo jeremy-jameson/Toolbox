@@ -1,3 +1,34 @@
+<#PSScriptInfo
+
+.VERSION 1.0.0
+
+.GUID dc93a6e5-6acc-4975-9b2b-51d3547b12ed
+
+.AUTHOR jeremy-jameson
+
+.COMPANYNAME 
+
+.COPYRIGHT 
+
+.TAGS DNS 
+
+.LICENSEURI 
+
+.PROJECTURI https://github.com/jeremy-jameson/Toolbox
+
+.ICONURI 
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS 
+
+.EXTERNALSCRIPTDEPENDENCIES 
+
+.RELEASENOTES
+
+
+#>
+
 <#
 .SYNOPSIS
 Adds one or more hostnames to the hosts file.

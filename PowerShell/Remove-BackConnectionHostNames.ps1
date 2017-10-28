@@ -1,3 +1,34 @@
+<#PSScriptInfo
+
+.VERSION 1.0.0
+
+.GUID a0f9672f-7fd0-427f-a2cb-382cf981e2e8
+
+.AUTHOR jeremy-jameson
+
+.COMPANYNAME 
+
+.COPYRIGHT 
+
+.TAGS IIS 
+
+.LICENSEURI 
+
+.PROJECTURI https://github.com/jeremy-jameson/Toolbox
+
+.ICONURI 
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS 
+
+.EXTERNALSCRIPTDEPENDENCIES 
+
+.RELEASENOTES
+
+
+#>
+
 <#
 .SYNOPSIS
 Removes one or more host names from the BackConnectionHostNames registry value.
