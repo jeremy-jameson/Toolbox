@@ -16,7 +16,7 @@ function Add-Hostnames {
     Optional comment that is written above the new hosts entry.
 
     .EXAMPLE
-    .\Add-Hostnames.ps1 127.0.0.1 foobar
+    Add-TecBoxHostnames 127.0.0.1 foobar
 
     Description
     -----------
@@ -30,7 +30,7 @@ function Add-Hostnames {
     mapped to a different IP address.
 
     .EXAMPLE
-    .\Add-Hostnames.ps1 127.0.0.1 foo, bar "This is a comment"
+    Add-TecBoxHostnames 127.0.0.1 foo, bar "This is a comment"
 
     Description
     -----------

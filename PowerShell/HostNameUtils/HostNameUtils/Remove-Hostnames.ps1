@@ -10,7 +10,7 @@ function Remove-Hostnames {
     One or more hostnames to remove from the hosts file.
 
     .EXAMPLE
-    .\Remove-Hostnames.ps1 foobar
+    Remove-TecBoxHostnames foobar
 
     Description
     -----------
@@ -18,11 +18,11 @@ function Remove-Hostnames {
 
     127.0.0.1    foobar
 
-    After running "Remove-Hostnames.ps1 foobar" the hosts file no longer contains this
+    After running "Remove-TecBoxHostnames foobar" the hosts file no longer contains this
     line.
 
     .EXAMPLE
-    .\Remove-Hostnames.ps1 foo
+    Remove-TecBoxHostnames foo
 
     Description
     -----------
@@ -30,13 +30,13 @@ function Remove-Hostnames {
 
     127.0.0.1    foobar foo bar
 
-    After running "Remove-Hostnames.ps1 foo" the line in the hosts file is updated
+    After running "Remove-TecBoxHostnames foo" the line in the hosts file is updated
     to remove the specified hostname ("foo"):
 
     127.0.0.1    foobar bar
 
     .EXAMPLE
-    .\Remove-Hostnames.ps1 foo, bar
+    Remove-TecBoxTecBoxHostnames foo, bar
 
     Description
     -----------
@@ -44,7 +44,7 @@ function Remove-Hostnames {
 
     127.0.0.1    foobar foo bar
 
-    After running "Remove-Hostnames.ps1 foo, bar" the line in the hosts file is updated to
+    After running "Remove-TecBoxHostnames foo, bar" the line in the hosts file is updated to
     remove the specified hostnames ("foo" and "bar"):
 
     127.0.0.1    foobar

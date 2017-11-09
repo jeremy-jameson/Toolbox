@@ -11,7 +11,7 @@ function Remove-BackConnectionHostNames {
     http://support.microsoft.com/kb/896861
 
     .EXAMPLE
-    .\Remove-BackConnectionHostNames.ps1 fabrikam-local, www-local.fabrikam.com
+    Remove-TecBoxBackConnectionHostNames fabrikam-local, www-local.fabrikam.com
     #>
     [CmdletBinding()]
     param(

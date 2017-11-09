@@ -12,7 +12,7 @@ function Get-BackConnectionHostNames {
     http://support.microsoft.com/kb/896861
 
     .EXAMPLE
-    .\Get-BackConnectionHostNames.ps1
+    Get-TecBoxBackConnectionHostNames
     fabrikam-local
     www-local.fabrikam.com
 

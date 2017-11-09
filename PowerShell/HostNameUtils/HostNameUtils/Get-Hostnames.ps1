@@ -7,7 +7,7 @@ function Get-Hostnames {
     The hosts file is used to map hostnames to IP addresses.
 
     .EXAMPLE
-    .\Get-HostNames.ps1
+    Get-TecBoxHostNames
 
     Hostname                                                    IpAddress
     --------                                                    ---------

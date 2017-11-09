@@ -11,7 +11,7 @@ function Add-BackConnectionHostNames {
     http://support.microsoft.com/kb/896861
 
     .EXAMPLE
-    .\Add-BackConnectionHostNames.ps1 fabrikam-local, www-local.fabrikam.com
+    Add-TecBoxBackConnectionHostNames fabrikam-local, www-local.fabrikam.com
     #>
     [CmdletBinding()]
     param(
