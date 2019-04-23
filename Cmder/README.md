@@ -1,5 +1,19 @@
 # Cmder configuration
 
+## Install Git PowerShell module
+
+```PowerShell
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+```
+
+**Note:** PowerShellGet requires NuGet provider version '2.8.5.201' or newer to
+interact with NuGet-based repositories. If prompted to install and import the
+NuGet provider, type **Y** and press **Enter** to continue.
+
+```PowerShell
+Install-Module -Name 'posh-git'
+```
+
 ## Configure miscellaneous settings according to personal preferences
 
 ```PowerShell
@@ -81,7 +95,7 @@ Update hard-coded foreground color in PowerShell profile:
 Notepad C:\NotBackedUp\Public\Toolbox\cmder\vendor\profile.ps1
 ```
 
-Update line 108 as follows:
+Modify line 108 as follows:
 
 108: Microsoft.PowerShell.Utility\Write-Host \$pwd.ProviderPath -NoNewLine -ForegroundColor ~~Green~~ **DarkGray**
 
