@@ -113,6 +113,12 @@ ext install ms-vscode.vscode-typescript-tslint-plugin
 ext install vscode-icons-team.vscode-icons
 ```
 
+> **Note:**
+>
+> HTML formatting issue with Prettier:
+>
+> - [Add the missing option to disable crappy Prettier VSCode HTML formatter #636](https://github.com/prettier/prettier-vscode/issues/636)
+
 ## Configure Visual Studio Code settings
 
 1. Open the **Command Palette** (press **Ctrl+Shift+P**)
@@ -128,6 +134,7 @@ ext install vscode-icons-team.vscode-icons
     "files.trimTrailingWhitespace": true,
     "git.autofetch": true,
     "html.format.wrapLineLength": 80,
+    "prettier.disableLanguages": ["html"],
     "terminal.integrated.shell.windows":
         "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "workbench.iconTheme": "vscode-icons"
