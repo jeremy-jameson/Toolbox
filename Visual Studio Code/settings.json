@@ -2,6 +2,7 @@
     "editor.formatOnSave": true,
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [80],
+    "files.trimTrailingWhitespace": true,
     "terminal.integrated.shell.windows": "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "workbench.iconTheme": "vscode-icons"
 }
