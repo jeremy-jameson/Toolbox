@@ -59,6 +59,12 @@ Close Visual Studio Code and modify the program shortcut as follows:
 ext install msazurermtools.azurerm-vscode-tools
 ```
 
+### Install extension: Beautify
+
+```
+ext install hookyqr.beautify
+```
+
 ### Install extension: C&#35;
 
 ```
@@ -113,11 +119,15 @@ ext install ms-vscode.vscode-typescript-tslint-plugin
 ext install vscode-icons-team.vscode-icons
 ```
 
-> **Note:**
+> **Notes:**
 >
-> HTML formatting issue with Prettier:
+> - HTML formatting issue with Prettier:
 >
-> - [Add the missing option to disable crappy Prettier VSCode HTML formatter #636](https://github.com/prettier/prettier-vscode/issues/636)
+>   - [Add the missing option to disable crappy Prettier VSCode HTML formatter #636](https://github.com/prettier/prettier-vscode/issues/636)
+
+> - Potential issue when using both Beautify and Prettier extensions:
+>
+>   - [Prettier & Beautify](https://css-tricks.com/prettier-beautify/)
 
 ## Configure Visual Studio Code settings
 
