@@ -1,11 +1,12 @@
 {
-    "editor.formatOnSave": true,
-    "editor.renderWhitespace": "boundary",
-    "editor.rulers": [80],
-    "files.trimTrailingWhitespace": true,
-    "git.autofetch": true,
-    "html.format.wrapLineLength": 80,
-    "prettier.disableLanguages": ["html"],
-    "terminal.integrated.shell.windows": "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-    "workbench.iconTheme": "vscode-icons"
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80],
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "html.format.wrapLineLength": 80,
+  "prettier.disableLanguages": ["html"],
+  "terminal.integrated.shell.windows": "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.iconTheme": "vscode-icons"
 }

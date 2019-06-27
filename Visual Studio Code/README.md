@@ -147,6 +147,7 @@ ext install vscode-icons-team.vscode-icons
     "prettier.disableLanguages": ["html"],
     "terminal.integrated.shell.windows":
         "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "workbench.editor.highlightModifiedTabs": true,
     "workbench.iconTheme": "vscode-icons"
 }
 ```
