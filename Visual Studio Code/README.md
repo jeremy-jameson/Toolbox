@@ -12,7 +12,7 @@ net use \\TT-FS01\IPC$ /USER:TECHTOOLBOX\jjameson
 
 ```PowerShell
 $setupPath = "\\TT-FS01\Products\Microsoft\Visual Studio Code" `
-    + "\VSCodeSetup-x64-1.31.1.exe"
+    + "\VSCodeSetup-x64-1.37.1.exe"
 
 $arguments = "/silent" `
     + " /mergetasks='!runcode,addcontextmenufiles,addcontextmenufolders" `
@@ -117,6 +117,12 @@ ext install ms-vscode.vscode-typescript-tslint-plugin
 
 ```
 ext install vscode-icons-team.vscode-icons
+```
+
+### Install extension: XML Tools
+
+```
+ext install dotjoshjohnson.xml
 ```
 
 > **Notes:**
