@@ -9,38 +9,33 @@ Set-Alias `
     -Name fciv `
     -Value C:\NotBackedUp\Public\Toolbox\FCIV\fciv.exe
 
-If ($env:PROCESSOR_ARCHITECTURE -eq "AMD64")
-{
+If ($env:PROCESSOR_ARCHITECTURE -eq "AMD64") {
     Set-Alias `
         -Name sgdm `
         -Value C:\NotBackedUp\Public\Toolbox\DiffMerge\x64\sgdm.exe
 }
-Else
-{
+Else {
     Set-Alias `
         -Name sgdm `
         -Value C:\NotBackedUp\Public\Toolbox\DiffMerge\x86\sgdm.exe
 }
 
-Function desktop
-{
+Function desktop {
     [String] $regPath = 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer'
 
     [String] $desktopPath = Get-ItemProperty `
         -Path "$regPath\User Shell Folders" `
         -Name Desktop |
-        select -ExpandProperty Desktop
+    select -ExpandProperty Desktop
 
-    If ([String]::IsNullOrEmpty($desktopPath) -eq $true)
-    {
+    If ([String]::IsNullOrEmpty($desktopPath) -eq $true) {
         $desktopPath = Get-ItemProperty `
             -Path "$regPath\Shell Folders" `
             -Name Desktop |
-            select -ExpandProperty Desktop
+        select -ExpandProperty Desktop
     }
 
-    If ([String]::IsNullOrEmpty($desktopPath) -eq $true)
-    {
+    If ([String]::IsNullOrEmpty($desktopPath) -eq $true) {
         Throw "Unable to determine Desktop path."
     }
 
@@ -51,28 +46,27 @@ Function temp { Push-Location C:\NotBackedUp\Temp }
 
 Function toolbox { Push-Location C:\NotBackedUp\Public\Toolbox }
 
-Function Enable-SharePointCmdlets
-{
+Function Enable-SharePointCmdlets {
     If ((Get-PSSnapin Microsoft.SharePoint.PowerShell `
-        -ErrorAction SilentlyContinue) -eq $null)
-    {
+                -ErrorAction SilentlyContinue) -eq $null) {
         Write-Debug "Adding snapin (Microsoft.SharePoint.PowerShell)..."
 
         $ver = $host | select version
 
-        If ($ver.Version.Major -gt 1)
-        {
+        If ($ver.Version.Major -gt 1) {
             $Host.Runspace.ThreadOptions = "ReuseThread"
         }
 
         Add-PSSnapin Microsoft.SharePoint.PowerShell
     }
 }
+
+
 # SIG # Begin signature block
 # MIIO3AYJKoZIhvcNAQcCoIIOzTCCDskCAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
 # gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR
-# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQURFI8ziM/4RPHnacT0hEKnk9L
-# 2f+gggwAMIIFrDCCBJSgAwIBAgITZAAADIvxpAQFTv7wVgABAAAMizANBgkqhkiG
+# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUPoqEtbA5SEn3R2AG4KP1pMLx
+# j22gggwAMIIFrDCCBJSgAwIBAgITZAAADIvxpAQFTv7wVgABAAAMizANBgkqhkiG
 # 9w0BAQsFADCBjDETMBEGCgmSJomT8ixkARkWA2NvbTEhMB8GCgmSJomT8ixkARkW
 # EXRlY2hub2xvZ3l0b29sYm94MRQwEgYKCZImiZPyLGQBGRYEY29ycDE8MDoGA1UE
 # AxMzVGVjaG5vbG9neSBUb29sYm94IElzc3VpbmcgQ2VydGlmaWNhdGUgQXV0aG9y
@@ -142,11 +136,11 @@ Function Enable-SharePointCmdlets
 # ZmljYXRlIEF1dGhvcml0eSAwMQITZAAADIvxpAQFTv7wVgABAAAMizAJBgUrDgMC
 # GgUAoHgwGAYKKwYBBAGCNwIBDDEKMAigAoAAoQKAADAZBgkqhkiG9w0BCQMxDAYK
 # KwYBBAGCNwIBBDAcBgorBgEEAYI3AgELMQ4wDAYKKwYBBAGCNwIBFTAjBgkqhkiG
-# 9w0BCQQxFgQU/OeQNi0doAMd1sAkkv75vRZQEvwwDQYJKoZIhvcNAQEBBQAEggEA
-# eHM987cUQji0l/QIBlowNMfjsHk8wZnBFV66NhLWMW9wovxXF+mWOKhV9pujE0T9
-# HBEuTlS/pQClWP6Ga+40bnW5iKXY5r6GMjjIFYLiVVNoh2FuKWYTPZuyyt6oijJ0
-# GBMO+6MB7X9AiGi2wEFsdLxHG+7eYBAhLvNDmLQjp+6XPADc8dKCfpu5D4xecwqG
-# Yjq2UmLBJ/nlP1h87VJbX1i7y09Q49TBEgO4wqCZP2hXSLkhEPaAlXyTzr/loYhV
-# nrvbypC2mofnAuyjahdBgWIjS0JvQGnQv1EkwzPmgLk8hxW4Hcqs3YuEO7QaZeAS
-# XKlAQ4HfyDH8cd6qIfTtQA==
+# 9w0BCQQxFgQUUqeZG5Ms8VhOCPvmK4q0QoBYAMYwDQYJKoZIhvcNAQEBBQAEggEA
+# CpDGlob+GnnggANC50AhRrRqftMH12B4E+AMoaC/ks2XM27QFWSiTmANG8WHH+BN
+# VgTk52ZpMIl7Om2BrShyulhlRJ4VkgvIA93nmT/uSFUzEXZuOMtU3ljCMuU5kPUT
+# UdE87VAv8DahQ9ONEenArfj1LGlHv2v83vFKmICczdRNHHjfCkiQ9YfcXqMusvrF
+# YwPL5fGnwxnmgAHXGhMqK6fmKjvQVoozZoyooI93JAjMN8UUKJViuFU2CLV/38XE
+# 9eR5HB6tVx2YbVuv9WHpk0MXQeBCilGp5GpAn32CTwVbCJmG6dvuxmMvF0Uqu89U
+# pHfDmap85GGDKu56vgwKGg==
 # SIG # End signature block
