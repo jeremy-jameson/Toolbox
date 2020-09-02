@@ -26,7 +26,7 @@
   "profiles": {
     "defaults": {
       // Put settings here that you want to apply to all profiles.
-      "fontFace": "Cascadia Code PL",
+      "fontFace": "Fira Code",
       "fontSize": 10
     },
     "list": [
