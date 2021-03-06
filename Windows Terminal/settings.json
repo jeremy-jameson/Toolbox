@@ -28,7 +28,7 @@
   "profiles": {
     "defaults": {
       // Put settings here that you want to apply to all profiles.
-      "colorScheme": "Dracula",
+      "colorScheme": "Technology Toolbox Dark",
       "fontFace": "Fira Code",
       "fontSize": 10
     },
@@ -87,6 +87,29 @@
       "brightRed": "#FF6E6E",
       "brightWhite": "#FFFFFF",
       "brightYellow": "#FFFFA5"
+    },
+    {
+      "name": "Technology Toolbox Dark",
+      "cursorColor": "#eeeeee",
+      "selectionBackground": "#dddddd",
+      "background": "#3b3b3b",
+      "foreground": "#f1f1f1",
+      "black": "#21222C",
+      "blue": "#1e4173",
+      "cyan": "#aab9cd",
+      "green": "#5eaf3d",
+      "purple": "#926387",
+      "red": "#d73636",
+      "white": "#f1f1f1",
+      "yellow": "#f4fd8f",
+      "brightBlack": "#dddddd",
+      "brightBlue": "#3c78c3",
+      "brightCyan": "#c8d7eb",
+      "brightGreen": "#77c856",
+      "brightPurple": "#ba8baf",
+      "brightRed": "#ff9999",
+      "brightWhite": "#fcfcfc",
+      "brightYellow": "#ffffa8"
     }
   ],
 
