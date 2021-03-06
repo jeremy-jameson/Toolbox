@@ -58,6 +58,13 @@
         "hidden": false,
         "name": "Azure Cloud Shell",
         "source": "Windows.Terminal.Azure"
+      },
+      {
+        "guid": "{ef0e23f2-2d5c-422c-a33c-403e87f1d395}",
+        "name": "PowerShell - Dracula",
+        "commandline": "pwsh.exe",
+        "colorScheme": "Dracula",
+        "icon": "ms-appdata:///roaming/PowerShell-7.ico"
       }
     ]
   },
