@@ -29,7 +29,7 @@
     "defaults": {
       // Put settings here that you want to apply to all profiles.
       "colorScheme": "Technology Toolbox Dark",
-      "fontFace": "MesloLGS NF",
+      "fontFace": "Fira Code",
       "fontSize": 10
     },
     "list": [
@@ -61,9 +61,10 @@
       },
       {
         "guid": "{ef0e23f2-2d5c-422c-a33c-403e87f1d395}",
-        "name": "PowerShell - Dracula",
+        "name": "PowerShell - Dracula/Meslo",
         "commandline": "pwsh.exe",
         "colorScheme": "Dracula",
+        "fontFace": "MesloLGS NF",
         "icon": "ms-appdata:///roaming/PowerShell-7.ico"
       }
     ]
