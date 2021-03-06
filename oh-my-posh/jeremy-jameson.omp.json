@@ -9,22 +9,22 @@
           "type": "root",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
-          "foreground": "#100e23",
-          "background": "#ffe9aa"
+          "foreground": "#21222C",
+          "background": "#f4fd8f"
         },
         {
           "type": "session",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
-          "foreground": "#100e23",
-          "background": "#ffffff"
+          "foreground": "#3b3b3b",
+          "background": "#dddddd"
         },
         {
           "type": "path",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
-          "foreground": "#100e23",
-          "background": "#91ddff",
+          "foreground": "#dddddd",
+          "background": "#3c78c3",
           "properties": {
             "folder_icon": "\uF115",
             "folder_separator_icon": "\uE0B1",
@@ -35,15 +35,15 @@
           "type": "git",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
-          "foreground": "#193549",
-          "background": "#95ffa4"
+          "foreground": "#3b3b3b",
+          "background": "#77c856"
         },
         {
           "type": "python",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
-          "foreground": "#100e23",
-          "background": "#906cff",
+          "foreground": "#21222C",
+          "background": "#926387",
           "properties": {
             "prefix": " \uE235 "
           }
@@ -52,8 +52,8 @@
           "type": "exit",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
-          "foreground": "#ffffff",
-          "background": "#ff8080",
+          "foreground": "#fcfcfc",
+          "background": "#d73636",
           "properties": {
             "prefix": " \uE20F"
           }
@@ -70,7 +70,7 @@
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#007ACC",
+          "foreground": "#3c78c3",
           "properties": {
             "prefix": "",
             "text": "\u276F"
