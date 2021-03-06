@@ -29,7 +29,7 @@
     "defaults": {
       // Put settings here that you want to apply to all profiles.
       "colorScheme": "Technology Toolbox Dark",
-      "fontFace": "Fira Code",
+      "fontFace": "MesloLGS NF",
       "fontSize": 10
     },
     "list": [
