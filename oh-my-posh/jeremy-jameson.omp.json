@@ -29,9 +29,14 @@
           "foreground": "#dddddd",
           "background": "#3c78c3",
           "properties": {
-            "folder_icon": "\uF115",
+            "folder_icon": "..",
             "folder_separator_icon": "\uE0B1",
-            "style": "full"
+            "mapped_locations": [
+              ["C:\\BackedUp", "\u2713 "],
+              ["C:\\NotBackedUp", "\u2718 "]
+            ],
+            "mixed_threshold": 6,
+            "style": "mixed"
           }
         },
         {
