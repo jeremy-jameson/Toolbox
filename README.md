@@ -1,3 +1,3 @@
 # Overview
 
-Scripts and other useful stuff I've blogged about. Also see http://www.technologytoolbox.com/blog/jjameson/tags/Toolbox.
+Scripts and other useful stuff I've blogged about. Also see https://www.technologytoolbox.com/tags/toolbox
