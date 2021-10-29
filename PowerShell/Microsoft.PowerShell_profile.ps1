@@ -1,5 +1,5 @@
 $Host.PrivateData.VerboseForegroundColor = "DarkGray"
-$Host.PrivateData.DebugForegroundColor = "Cyan"
+$Host.PrivateData.DebugForegroundColor = "Magenta"
 
 Set-Alias `
     -Name code `
