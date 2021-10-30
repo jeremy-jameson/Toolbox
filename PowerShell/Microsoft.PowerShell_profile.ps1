@@ -73,13 +73,19 @@ Function Enable-SharePointCmdlets {
 #
 # https://github.com/JanDeDobbeleer/oh-my-posh2/issues/251#issuecomment-654150622
 
-Set-PoshPrompt -Theme C:\NotBackedUp\GitHub\jeremy-jameson\Toolbox\oh-my-posh\jeremy-jameson.omp.json
-$env:POSH_SESSION_DEFAULT_USER = 'jjameson'
+# Only set the custom prompt when running in Windows Terminal to avoid issues
+# (for example, slight differences in the color scheme used for Cmder windows
+# make text difficult to read)
+
+If ($env:WT_SESSION) {
+    Set-PoshPrompt -Theme C:\NotBackedUp\GitHub\jeremy-jameson\Toolbox\oh-my-posh\jeremy-jameson.omp.json
+    $env:POSH_SESSION_DEFAULT_USER = 'jjameson'
+}
 # SIG # Begin signature block
 # MIIPCwYJKoZIhvcNAQcCoIIO/DCCDvgCAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
 # gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR
-# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUP91utHO+w+Swfn2qnhxUBfrG
-# GrqgggwvMIIF2zCCBMOgAwIBAgITZAAADoThAI2La6lyLQABAAAOhDANBgkqhkiG
+# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUFPzNIMjRyM9xCuYdTxwLfA+4
+# 4kygggwvMIIF2zCCBMOgAwIBAgITZAAADoThAI2La6lyLQABAAAOhDANBgkqhkiG
 # 9w0BAQsFADCBjDETMBEGCgmSJomT8ixkARkWA2NvbTEhMB8GCgmSJomT8ixkARkW
 # EXRlY2hub2xvZ3l0b29sYm94MRQwEgYKCZImiZPyLGQBGRYEY29ycDE8MDoGA1UE
 # AxMzVGVjaG5vbG9neSBUb29sYm94IElzc3VpbmcgQ2VydGlmaWNhdGUgQXV0aG9y
@@ -150,11 +156,11 @@ $env:POSH_SESSION_DEFAULT_USER = 'jjameson'
 # aWNhdGUgQXV0aG9yaXR5IDAxAhNkAAAOhOEAjYtrqXItAAEAAA6EMAkGBSsOAwIa
 # BQCgeDAYBgorBgEEAYI3AgEMMQowCKACgAChAoAAMBkGCSqGSIb3DQEJAzEMBgor
 # BgEEAYI3AgEEMBwGCisGAQQBgjcCAQsxDjAMBgorBgEEAYI3AgEVMCMGCSqGSIb3
-# DQEJBDEWBBS1oVkxoYf1TusCvBO0HtvZ3GEmXDANBgkqhkiG9w0BAQEFAASCAQAQ
-# FPmeaQV2JNFbdrqOfoGPM9YijCxoMp9wpe6sRRS8TxJsGelKz/YdXOXFsVBOVrAQ
-# 0I0w4hVixAHX7DVPPBbkIr6BmdxDiam54nRNI9zxyJhQpAZUcNCMbwWJwBBXqRzv
-# ltUPf+cBxj8IjNrxy/hdIpCEVSuqjz1EA4X4l5/ivrJgEpqNP68xcF5ADLlwqfbq
-# tVRcWgoarFpImER9lq7MtO30h3gGpzGJCWR7F/l2WuaZeSTIbFWXs0RG568vyvcV
-# uxRecBsWhGBihrySH9tQN53Abar0WkwOEkVCNoUH1GgY0eUeAx57NNjdBY0DYMbb
-# 5cTWtKg2nlefNYtKzMqB
+# DQEJBDEWBBTgcPO7z0xIIttbUy47ekQDuB+ezTANBgkqhkiG9w0BAQEFAASCAQAh
+# n0+SUF+dNbli/+oENlqFT9SriPNkY6pseuN8CejeLbdweGaFo3DhlJJRP7kdWJs+
+# Kq2FePLYgJ/SGBkvZjLJ7bvm/+XzhweeLmgk3ymZ+VGDb4FKsmaFoxVjladVElAJ
+# ZPPtFgodiN2Or44JEFZIRNxNCP62xyNVYKO/XGpS1shd3KgbhYlxJX5qsxteCx2b
+# mIB07lv6DLW7kJ+tijrOFLK74yxYR9xhhz4D4kt9ZqZzIwYb8huzi/iT5JeSRy2/
+# hFEqftBO/24nvMluTvS2fHbX5NDx0Fr16H+IUcQlV4hb8MwTdgLhLqEKDviAZ79C
+# 6kyDolqBbE1zldSsz4hG
 # SIG # End signature block
